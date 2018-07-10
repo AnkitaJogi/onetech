@@ -36,7 +36,7 @@ public class SqlDAO extends DAOFactory{
 				else
 					System.out.println("error");
 			}catch(Exception e) {
-				
+
 				e.printStackTrace();
 				
 			}
@@ -66,6 +66,7 @@ public class SqlDAO extends DAOFactory{
 			rs=st.executeQuery(query);
 			
 			if(rs.next()) {
+				
 				b=true;
 			}			
 			con.close();
